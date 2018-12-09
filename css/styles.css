@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'gilroyextrabold';
+  src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroylight';
+  src: url('../fonts/gilroylight-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../fonts/opensans-regular-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sanslight';
+  src: url('../fonts/opensans-light-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+::placeholder {
+	font-family: 'Roboto', sans-serif!important
+}
+
+button, input, select, textarea {
+	font: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0;
+	border:0;
+	height: 1px; 
+	width: 1px; 
+	overflow: hidden;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+  width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	position: relative;
+}
+
+.main-header {
+  margin-bottom: 55px;
+  margin-top: 34px;
+}
+
+.logo {
+  position: absolute;
+  font-family: 'gilroyextrabold';
+  font-size: 48px;
+}
+
+.user-block {
+  display: flex;
+}
+
+.user-options {
+  display: flex;
+}
+
+.main-header-nav ul {
+  display: flex;
+}
+
+.main-header-background {
+  min-height: 680px;
+  background: linear-gradient(to bottom, #f7e296 40%, #ffffff 40%, #ffffff 100%);
+}
+
+.device-category .category-item {
+  display: flex;
+}

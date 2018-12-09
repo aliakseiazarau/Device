@@ -75,29 +75,185 @@ ul {
   margin-top: 34px;
 }
 
-.logo {
-  position: absolute;
-  font-family: 'gilroyextrabold';
-  font-size: 48px;
-}
-
-.user-block {
-  display: flex;
-}
-
-.user-options {
-  display: flex;
-}
-
-.main-header-nav ul {
-  display: flex;
-}
-
 .main-header-background {
   min-height: 680px;
   background: linear-gradient(to bottom, #f7e296 40%, #ffffff 40%, #ffffff 100%);
 }
 
+.main-header-nav {
+  min-height: 190px;
+  margin: 0 60px;
+}
+
+.header-user-block {
+  display: flex;
+  position: relative;
+  padding-top: 50px;
+}
+
+.logo {
+  position: absolute;
+  font-family: 'gilroyextrabold';
+  font-size: 48px;
+  left: 60px;
+  top: -30px;
+}
+
+.search-form {
+  width: 440px;
+  margin-right: 100px;
+}
+
+.user-block {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-item:first-child {
+  width: 440px;
+  margin-right: 100px;
+}
+
+
 .device-category .category-item {
   display: flex;
+}
+
+
+
+
+
+.slider {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.slider input[type='radio'] {
+	position: absolute;
+	opacity: 0;
+}
+
+.slides {
+	width: 100%;
+}
+
+.slides h2 {
+	font-size: 55px;
+	letter-spacing: 0;
+	line-height: 55px;
+	font-weight: 500;
+	padding-bottom: 27px;
+}
+
+.slides p {
+	font-size: 16px;
+	letter-spacing: 0;
+	line-height: 24px;
+	padding-bottom: 39px;
+}
+
+.slide {
+	display: none;
+	width: 97%;
+	padding: 65px 0 80px;
+	-webkit-animation: 30s 24s ease-in-out infinite;
+	        animation: 30s 24s ease-in-out infinite;
+}
+
+.slide1 {
+	background-image: url(../img/slide1.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+.slide2 {
+	background-image: url(../img/slide2.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+.slide3 {
+	background-image: url(../img/slide3.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+input:checked:nth-child(1) ~ .slides .slide1 {
+	display: block;
+}
+
+input:checked:nth-child(2) ~ .slides .slide2 {
+	display: block;
+}
+
+input:checked:nth-child(3) ~ .slides .slide3 {
+	display: block;
+}
+
+.slider-controls {
+	position: absolute;
+	bottom: 96px;
+	left: 46%;
+}
+
+.slider-control {
+	display: inline-block;
+	vertical-align: middle;
+	width: 18px;
+	height: 18px;
+	margin: 0 6px;
+	border-radius: 50%;
+	background: #ffff;
+	position: relative;
+	cursor: pointer;
+}
+
+.slider-control::after {
+	position: absolute;
+	display: none;
+	background: #ffffff;
+	border: 2px solid #c1c1c1;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	top: 5px;
+	left: 5px;
+}
+
+input:checked:nth-child(1) ~ .slider-controls .slider-control:nth-child(1)::after {
+	display: block;
+}
+
+input:checked:nth-child(2) ~ .slider-controls .slider-control:nth-child(2)::after {
+	display: block;
+}
+
+input:checked:nth-child(3) ~ .slider-controls .slider-control:nth-child(3)::after {
+	display: block;
+}
+
+input:focus:nth-child(1) ~ .slider-controls .slider-control:nth-child(1)::after,
+input:focus:nth-child(2) ~ .slider-controls .slider-control:nth-child(2)::after,
+input:focus:nth-child(3) ~ .slider-controls .slider-control:nth-child(3)::after {
+	display: block;
+	border: solid 4px #fb565a;
+	background: #fb565a;
+	width: 16px;
+	height: 16px;
+	top: 1px;
+	left: 1px;
 }

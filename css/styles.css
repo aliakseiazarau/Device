@@ -379,7 +379,7 @@ button {
 
 }
 
-.header-nav-block .plus a:hover + .header-dropdown {
+.plus-item:hover ~ .header-dropdown {
 	display: block;
 }
 
@@ -643,27 +643,49 @@ input:focus:nth-child(3) ~ .slider-controls .slider-control:nth-child(3)::after 
 
 .info-block {
 	display: flex;
+	justify-content: space-between;
+}
+
+.about {
+	width: 462px;
+}
+
+.contact  {
+	width: 560px;
+}
+
+.info-block .divider {
+	margin-bottom: 50px;
 }
 
 .about h3, .contact h3 {
+	display: inline-block;
 	font-family: 'gilroyextrabold';
 	font-size: 47px;
 	line-height: 48px;
 	letter-spacing: 1px;
+	margin-bottom: 59px;
 }
 
 .about p, .contact p {
+	display: inline-block;
 	font-family: 'open_sanslight';
 	font-size: 15px;
 	line-height: 30px;
+	margin-bottom: 44px;
 }
+
+.about p:last-child {
+	margin-bottom: 88px;
+}
+
+
 
 .about ul {
 	font-family: 'gilroyextrabold';
 	font-size: 16px;
 	line-height: 40px;
 }
-
 
 
 .footer {

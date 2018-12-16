@@ -316,10 +316,6 @@ button {
 	text-transform: uppercase;
 }
 
-.header-nav ul {
-  display: flex;
-}
-
 .header-nav-block {
 	display: flex;
 	justify-content: space-between;
@@ -375,14 +371,14 @@ button {
 	text-transform: capitalize;
 }
 
-.header-dropdown-item a {
-
-}
-
 .plus-item:hover ~ .header-dropdown {
 	display: block;
 }
 
+.dropdown-list {
+	display: flex;
+	align-content: flex-start;
+}
 
 
 

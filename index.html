@@ -202,33 +202,32 @@
     </section>	
     
     <section class="advantages-slider-background">
-      <div class="advantages-slider">
-        <div class="container">
-          <input type="radio" name="advantages-slider" id="slider4" checked="checked">
-          <input type="radio" name="advantages-slider" id="slider5">
-          <input type="radio" name="advantages-slider" id="slider6" >
-          <div class="slides">
-            <div class="adventages-slide adventages-slide1">
-              <h2>Доставка</h2>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж</p>
-            </div>
-            <div class="adventages-slide adventages-slide2">
-              <h2>Гарантия</h2>
-              <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-            </div>
-            <div class="adventages-slide adventages-slide3">
-              <h2>Кредит</h2>
-              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-            </div>
+      <div class="advantages-slider container">
+        <input type="radio" name="advantages-slider" id="slider4" checked="checked">
+        <input type="radio" name="advantages-slider" id="slider5">
+        <input type="radio" name="advantages-slider" id="slider6" >
+        <div class="advantages-slides">
+          <div class="advantages-slide advantages-slide1">
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж</p>
           </div>
-          <div class="-adventages-slider-controls">
-            <label class="adventages-slider-control slider-control1" for="slider4"></label>
-            <label class="adventages-slider-control slider-control2" for="slider5"></label>
-            <label class="adventages-slider-control slider-control3" for="slider6"></label>
+          <div class="advantages-slide advantages-slide2">
+            <h2>Гарантия</h2>
+            <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
           </div>
-        </div>		
-      </div>
+          <div class="advantages-slide advantages-slide3">
+            <h2>Кредит</h2>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </div>
+        </div>
+        <div class="advantages-slider-controls">
+          <label class="button advantages-slider-control slider-control4" for="slider4">Доставка</label>
+          <label class="button advantages-slider-control slider-control5" for="slider5">Гарантия</label>
+          <label class="button advantages-slider-control slider-control6" for="slider6">Кредит</label>
+        </div>
+      </div>		
     </section> 
+
     <section class="container">
       <div class="partners">
         <ul class="partners-logo">
@@ -261,9 +260,11 @@
     <div class="about">
       <div class="divider"></div>
       <h3>О нас</h3>
-      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-      <ul>
+      <div class="about-text">
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+      </div>
+      <ul class="delivery-list">
         <li>Деловые Линии</li>
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
@@ -272,12 +273,12 @@
     </div>
     <div class="contact">
       <div class="divider"></div>
-      <h3>Контакт</h3>
+      <h3>Контакты</h3>
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-      <a>
-        <img src="img/map.png" width="560" height="222">
+      <a class="map" href="#">
+        <img src="img/map.png" width="560" height="222" alt="Изображение карты с адресом магазина">
       </a>
-      <a class="button" href="#">Пишите нам</a>
+      <a class="button" href="#">Напишите нам</a>
     </div>
   </section>
   
@@ -328,6 +329,39 @@
         <img src="img/logo-html.svg" alt="Иконка сайта HTML-Academy">
       </a>
     </div>
-	</footer>
+  </footer>
+  
+  <div class="modal-overlay">
+    <div class="modal-window modal-contact">
+      <div class="modal-close">Крестик закрытия модального окна</div>
+      <form class="modal-form" method="post">
+        <div class="modal-inputs">
+          <div class="form-input-item">
+            <label for="user-name">Ваше имя:</label>
+            <input type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
+            <div class="modal-alert">Введите своё имя</div>
+          </div>
+          <div class="form-input-item">
+            <label for="user-email">Ваш e-mail:</label>
+            <input type="text" name="user-email" id="user-email" placeholder="email@example.com">
+            <div class="modal-alert">Введите своё имя</div>
+          </div>
+        </div>
+        <div class="form-message">
+          <label for="message-text">Текст письма:</label>
+          <textarea rows="3" name="message-text" id="message-text" placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="button form-button" type="submit" name="button">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-overlay map-overlay">
+    <div class="modal-window modal-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488834914!2d37.52742395180429!3d55.68703098044029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sby!4v1545134928584" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="modal-close">Крестик закрытия модального окна</div>
+    </div>
+  </div>
+
 </body>
 </html>

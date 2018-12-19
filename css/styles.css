@@ -473,6 +473,10 @@ button, input, textarea, select {
 	margin-bottom: 60px;
 }
 
+.slides .button {
+	width: 220px;
+}
+
 .slider-info {
 	display: flex;
 }
@@ -561,8 +565,8 @@ input:checked:nth-child(3) ~ .slides .slide3 {
 
 .slider-controls {
 	position: absolute;
-	bottom: 96px;
-	left: 46%;
+	top: 300px;
+	right: 72px;
 }
 
 .slider-control {

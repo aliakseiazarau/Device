@@ -1,0 +1,217 @@
+<html lang="ru">
+  <head>
+  <meta charset="utf-8">
+  <title>Device</title> 
+  <link rel="stylesheet" href="css/styles.css"> 
+  </head>
+</html>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="main-header-nav">
+        <div class="header-user-block">
+          <a class="logo" href="index.html">Device</a>
+          <form class="search-form" action="catalog.html" method="post">
+            <input class="search-field" id="search-field" name="search-field" type="text" placeholder="Поиск по сайту">
+            <button class="search-button" type="submit" name="search-button">Поиск</button>
+          </form>
+          <ul class="user-block">
+            <li>
+              <a class="user-option login" href="#">Войти</a>
+            </li>
+            <li>
+              <a class="user-option compare" href="#">Сравнить</a>
+            </li>
+            <li>
+              <a class="user-option cart" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-nav">
+          <ul class="header-nav-block">
+            <li class="plus">
+              <a class="header-item plus-item" href="#">Каталог товаров</a>
+              <ul class="header-dropdown">
+                <ul class="dropdown-list">
+                  <li class="header-dropdown-item">
+                    <a href="#">Виртуальная реальность</a>
+                  </li>
+                  <li class="header-dropdown-item">
+                    <a href="#">Моноподы для селфи</a>
+                  </li>
+                  <li class="header-dropdown-item">
+                    <a href="#">Экшн-камеры</a>
+                  </li>
+                </ul>  
+                <ul class="dropdown-list">
+                  <li class="header-dropdown-item">
+                    <a href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="header-dropdown-item">
+                    <a href="#">Умные часы</a>
+                  </li>
+                </ul>  
+                <ul class="dropdown-list">
+                  <li class="header-dropdown-item">
+                    <a href="#">Квадрокоптеры</a>
+                  </li>
+                </ul>
+              </ul>    
+            </li>
+            <li>
+              <a class="header-item" href="#">Доставка</a>
+            </li>
+            <li >
+              <a class="header-item" href="#">Гарантия</a>
+            </li>
+            <li>
+              <a class="header-item" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>  
+  <section class="container">
+    <h1 class="catalog-title">Моноподы для селфи</h1>
+    <ul class="breadcrumbs">
+      <li>
+        <a href="#">Главная</a>
+      </li>
+      <li>
+        <a href="#">Каталог товаров</a>
+      </li>
+      <li class="breadcrumbs-current">Моноподы для селфи</li>
+    </ul>
+  </section>
+  <main>
+    <div class="main-catalog">
+      <section class="sidebar-filter">
+        <div class="container">
+          <h2 class="visually-hidden">Фильтр характеристик девайсов</h2>
+          <h3 class="filter-header">Фильтр:</h3>
+          <form class="catalog-filter" method="post" action="#" id="filter-form">
+            <div class="filter-slider">
+              <h4 class="filter-title-price">Стоимость:</h4>
+              <div class="filter-price">
+                <div class="icon slider-line">
+                  <div class="filter-min"></div>
+                  <div class="filter-max"></div>
+                </div>
+              </div>
+              <div class="filter-inputs">
+                <div class="price-start">
+                  <label for="filter-field-min">От</label>
+                  <input class="filter-field" type="text" name="filter-field-min" id="filter-field-min" placeholder="0">
+                </div>
+                <div class="price-end">
+                  <label for="filter-field-max">До</label>
+                  <input class="filter-field" type="text" name="filter-field-max" id="filter-field-max" placeholder="5000">
+                </div>	
+              </div>
+            </div>
+    
+            <fieldset>
+              <div class="filter-properties">
+                <legend class="filter-properties-title">Цвет</legend>
+                <ul class="filter-properties-list">
+                  <li class="filter-option">
+                    <input class="filter-input" type="checkbox" name="slider" id="filter-slider" checked="checked">
+                    <label class="icon" for="filter-slider">Чёрный</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="filter-input" type="checkbox" name="block-advatages" id="filter-advantages"> 
+                    <label class="icon" for="filter-advantages">Белый</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="filter-input" type="checkbox" name="news" id="filter-news" checked="checked">
+                    <label class="icon" for="filter-news">Синий</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="filter-input" type="checkbox" name="gallery" id="filter-gallery" checked="checked">
+                    <label class="icon" for="filter-gallery">Красный</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="filter-input" type="checkbox" name="cart" id="filter-cart">
+                    <label class="icon" for="filter-cart">Розовый</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset>
+              <div class="filter-grid-type">
+                <legend class="filter-grid-title">Bluetooth</legend>
+                <ul class="filter-grid-list">
+                  <li class="filter-option">
+                    <input class="filter-input" type="radio" name="filter-sites-radio" value="adaptive" id="filter-adaptive" checked>
+                    <label class="icon" for="filter-adaptive">Есть</label> 
+                  </li>
+                  <li class="filter-option">
+                    <input class="filter-input" type="radio" name="filter-sites-radio" value="fixed" id="filter-fixed">
+                    <label class="icon" for="filter-fixed">Нет</label> 
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <button type="submit" class="button filter-button">Показать</button>
+          </form>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="container"></div>
+      </section>
+    </div>
+    
+  
+  </main> 
+
+  <footer class="footer">
+    <div class="footer-user-block container">
+      <a class="footer-logo" href="#">Device</a>
+      <ul class="footer-user-options">
+        <li>
+          <a class="user-option login" href="#">Войти</a>
+        </li>
+        <li>
+          <a class="user-option compare" href="#">Сравнить</a>
+        </li>
+        <li>
+          <a class="user-option cart" href="#">Корзина</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-nav-block container">
+      <p>г. Москва, ул. Строителей, 15</p>
+      <ul class="footer-nav">
+        <li>
+          <a class="header-item" href="#">Доставка</a>
+        </li>
+        <li >
+          <a class="header-item" href="#">Гарантия</a>
+        </li>
+        <li>
+          <a class="header-item" href="#">Контакты</a>
+        </li>
+      </ul>
+      <a class="phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+    </div>
+    <div class="footer-social container">
+      <div class="divider"></div>
+      <ul class="social-icons">
+        <li class="footer-social-item">
+          <a class="icon fb-icon" href="https://www.Facebook.com">Логотип Facebook</a>
+        </li>
+        <li class="footer-social-item">
+          <a class="icon insta-icon" href="https://www.Instagram.com">Логотип Instagram</a>
+        </li>	
+        <li class="footer-social-item">
+          <a class="icon twitter-icon" href="https://www.twitter.com">Логотип Twitter</a>
+        </li>	
+      </ul>
+      <a href="#">
+        <img src="img/logo-html.svg" alt="Иконка сайта HTML-Academy">
+      </a>
+    </div>
+  </footer>  
+</body>
+</html>

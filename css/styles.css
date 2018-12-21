@@ -62,9 +62,13 @@ ul {
 	list-style-type: none;
 }
 
-form {
+form,fieldset {
 	margin: 0;
 	padding: 0;
+}
+
+fieldset {
+	border: none;
 }
 
 button {
@@ -93,6 +97,7 @@ button, input, textarea, select {
 	letter-spacing: 2px;
 	text-align: center;
 	text-transform: uppercase;
+	z-index: 1;
 }
 
 .button:active {
@@ -1099,6 +1104,7 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
 }
 
 .sidebar-filter {
+	padding-right: 69px;
 	background: linear-gradient(to bottom, #dbdbdb 70px, #eeeeee 70px, #eeeeee 100%);
 }
 
@@ -1112,23 +1118,44 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
 }
 
 .filter-slider {
-	margin-bottom: 58px;
+	position: relative;
+	margin-bottom: 14px;
+	padding: 16px 0 28px;
+}
+
+.filter-slider::before,
+.filter-slider::after {
+	content: '';
+	position: absolute;
+	width: 200px;
+	height: 2px;
+	background: #000000;
+	top: 0;
+	left: 0;
+}
+
+.filter-slider::after {
+	top: 140;
+	left: 0;
 }
 
 .sidebar-filter h4 {
 	font-size: 18px;
 }
 
-.filter-title-price {
-	margin-bottom: 20px;
+.filter-title-price,
+.filter-properties-title,
+.filter-bluetooth-title {
+	font-size: 18px;
+	font-family: 'gilroyextrabold';
+	margin-bottom: 35px;
 }
 
 .filter-price {
 	position: relative;
-	min-height: 81px;
 	background: #eeeeee;
-	margin-bottom: 14px;
-	padding: 0 21px;
+	margin-bottom: 40px;
+	padding: 0;
 }
 
 .slider-line {
@@ -1136,15 +1163,16 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
 	display: flex;
 	background: #dbdbdb;
 	height: 2px;
-	width: 80%;
+	width: 100%;
 	top: 50%;
+	margin-bottom: 15px;
 }
 
 .slider-line::before {
 	content: '';
 	height: 2px;
 	background: #91c92f;
-	width: 68%;
+	width: 60%;
 	top: 10%;
 }
 
@@ -1154,7 +1182,6 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
 	height: 20px;
 	top: -10px;
 	border-radius: 50%;
-	background-color: #ffffff;
 	background-image: url(../img/filter-button.svg);
 	background-repeat: no-repeat;
   box-shadow: 0 2px 2px -1px rgba(0,1,1, 0.25);
@@ -1162,51 +1189,110 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
 }
 
 .filter-max {
-	right: 50px;
+	right: 68px;
+}
+
+.filter-min:active,
+.filter-max:active {
+	width: 22px;
+	height: 22px;
+	box-shadow: 0 1px 2px -1px rgba(0,1,1, 0.25);
 }
 
 .filter-inputs {
 	display: flex;
-  justify-content: space-between;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 22px;
-	color: #283136;
+	font-family: 'gilroylight';
+	color: #000000;
+	opacity: 0.2;
 }
 
-.price-start, .price-end {
-  align-content: center;
+.price-start {
+ margin-right: 53px;
 }
 
-.price-start label {
-	margin-right: 10px;
-}
-
+.price-start label,
 .price-end label {
-	margin-right: 10px;
+	margin-right: 0px;
 }
-	
+
 .filter-inputs input {
-	text-align: center;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 22px;
-	color: #283136;
+	color: #000000;
 	border-radius: 3px;
 	background: #eeeeee;
 	border: none;
 }
 
 .filter-field {
-	width: 80px;
+	width: 40px;
 	min-height: 38px;
 }
 
+.filter-properties-list label,
+.filter-bluetooth-available label {
+	color: #000000;
+	font-size: 14px;
+	line-height: 40px;
+	font-family: 'open_sanslight';
+}
+
+.filter-option {
+	position: relative;
+}
+
+.filter-option input[type=radio],
+.filter-option input[type=checkbox] {
+	display: none;
+}
+
+.filter-option label {
+	padding-left: 42px;
+}
+
+.filter-option label:hover::before,
+.filter-option label:focus::before {
+	opacity: 0.6;
+} 
+
+.filter-option label:active::before {
+	opacity: 1;
+} 
+
+.filter-properties-list label::before,
+.filter-bluetooth-available label::before {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	vertical-align: middle;
+	width: 23px;
+	height: 23px;
+	top: 8;
+	left: 3;
+	background-image: url(../img/checkbox-off.svg);
+}
+
+.filter-bluetooth-available label::before {
+	width: 25px;
+	height: 25px;
+	top: 10;
+	background-image: url(../img/radio-off.svg);
+}
+
+.filter-properties-list .filter-input:checked+label::before {
+	background-image: url(../img/checkbox-on.svg);
+}
+
+.filter-bluetooth-list .filter-input:checked+label::before {
+	background-image: url(../img/radio-on.svg);
+}
 
 
-
-
-
-
-
+.filter-bluetooth-available {
+	margin-bottom: 31px;
+}
 
 .filter-button {
 	width: 200px;

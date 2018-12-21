@@ -87,7 +87,7 @@
   <main>
     <div class="main-catalog">
       <section class="sidebar-filter">
-        <div class="container">
+        <div class="">
           <h2 class="visually-hidden">Фильтр характеристик девайсов</h2>
           <h3 class="filter-header">Фильтр:</h3>
           <form class="catalog-filter" method="post" action="#" id="filter-form">
@@ -101,12 +101,12 @@
               </div>
               <div class="filter-inputs">
                 <div class="price-start">
-                  <label for="filter-field-min">От</label>
-                  <input class="filter-field" type="text" name="filter-field-min" id="filter-field-min" placeholder="0">
+                  <label for="filter-field-min">от</label>
+                  <input class="filter-field" type="text" name="filter-field-min" id="filter-field-min" value="0">
                 </div>
                 <div class="price-end">
-                  <label for="filter-field-max">До</label>
-                  <input class="filter-field" type="text" name="filter-field-max" id="filter-field-max" placeholder="5000">
+                  <label for="filter-field-max">до</label>
+                  <input class="filter-field" type="text" name="filter-field-max" id="filter-field-max" value="5000">
                 </div>	
               </div>
             </div>
@@ -139,9 +139,9 @@
               </div>
             </fieldset>
             <fieldset>
-              <div class="filter-grid-type">
-                <legend class="filter-grid-title">Bluetooth</legend>
-                <ul class="filter-grid-list">
+              <div class="filter-bluetooth-available">
+                <legend class="filter-bluetooth-title">Bluetooth</legend>
+                <ul class="filter-bluetooth-list">
                   <li class="filter-option">
                     <input class="filter-input" type="radio" name="filter-sites-radio" value="adaptive" id="filter-adaptive" checked>
                     <label class="icon" for="filter-adaptive">Есть</label> 

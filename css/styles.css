@@ -170,7 +170,6 @@ button, input, textarea, select {
 
 .search-form {
   width: 460px;
-	margin-right: 77px;
 }
 
 .search-form::before {
@@ -252,17 +251,31 @@ button, input, textarea, select {
 .user-block,
 .footer-user-options {
   display: flex;
-	justify-content: space-between;
 	align-items: center;
 	font-size: 15px;
 	line-height: 30px;
 	font-family: 'open_sanslight';
-  width: 500px;
+	margin-left: auto;
 }
 
 .user-block li {
 	position: relative;
+	margin-right: 35px;
 }
+
+.user-block li:first-child {
+	margin-right: 209px;
+}
+
+.user-block li:nth-child(2) {
+	margin-left: auto;
+}
+
+.user-block li:last-child {
+	margin-right: 0;
+}
+
+
 
 .user-option {
 	padding-left: 30px;
@@ -291,14 +304,6 @@ button, input, textarea, select {
 	background-repeat: no-repeat;
 }
 
-.compare {
-	margin-left: auto;
-
-}
-
-/* .user-option {
-	margin-right: 10px;
-} */
 
 .compare::before {
 	content: '';
@@ -324,6 +329,7 @@ button, input, textarea, select {
 
 .header-nav,
 .footer-nav {
+	display: flex;
 	font-size: 18px;
 	line-height: 24px;
 	font-family: 'gilroyextrabold';
@@ -332,21 +338,26 @@ button, input, textarea, select {
 }
 
 .header-nav-block {
+	margin-left: auto;
 	display: flex;
-	justify-content: space-between;
 }
 
-.header-nav-block a {
+.header-nav-block li {
+	margin-right: 36px;
+}
+
+.header-nav-block a,
+.plus a {
 	position: relative;
 }
 
-.header-nav-block li:last-child .header-item {
-	padding-left: 66px;
+.header-nav-block li:last-child {
+	margin-right: 0px;
+	margin-left: 67px;
 }
 
 .plus {
 	position: relative;
-	width: 500px;
 }
 
 .plus::after {
@@ -355,7 +366,7 @@ button, input, textarea, select {
 	width: 16px;
 	height: 16px;
 	top: 2px;
-	right: 51%;
+	right: 0;
 	background-image: url(../img/plus.svg);
 	opacity: 0.3;
 	cursor: pointer;
@@ -940,17 +951,21 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
   font-size: 48px;
 	text-transform: uppercase;
 	cursor: pointer;
-	margin-right: 670px;
+	margin-right: auto;;
 }
 
 .footer-user-options {
 	display: flex;
-	justify-content: space-between;
 	color: #ffffff;
 }
 
 .footer-user-options li {
 	position: relative;
+	margin-right: 34px;
+}
+
+.footer-user-options li:last-child {
+	margin-right: 0px;
 }
 
 .footer-user-options .login::before,

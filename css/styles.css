@@ -414,7 +414,8 @@ button, input, textarea, select {
 	padding-right: 30px;
 }
 
-.plus:hover .header-dropdown {
+.plus:hover .header-dropdown,
+.plus a:focus ~ .header-dropdown {
 	display: flex;
 	z-index: 1;
 }
@@ -1066,6 +1067,10 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
 	opacity: 0.3;
 }
 
+.catalog-category-name {
+	padding-left: 60px;
+}
+
 
 .catalog-title {
 	font-size: 47px;
@@ -1123,17 +1128,26 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
 }
 
 .sidebar-filter {
-	padding-right: 69px;
-	background: linear-gradient(to bottom, #dbdbdb 70px, #eeeeee 70px, #eeeeee 100%);
+	background-color: #eeeeee;
+}
+
+.sidebar-filter-header {
+	background-color: #dbdbdb;
+	padding-left: 60px;
+}
+
+.sidebar-filter-form {
+	background-color: #eeeeee;
+	padding: 70px 66px 70px 60px;
 }
 
 .filter-header {
 	font-size: 16px;
-	letter-spacing: 2px;
+	letter-spacing: 3.5px;
 	font-family: 'gilroyextrabold';
-	padding: 26px 0 25px;
+	padding: 25px 0 25px;
 	text-transform: uppercase;
-	margin-bottom: 69px;
+	/* margin-bottom: 69px; */
 }
 
 .filter-slider {
@@ -1303,6 +1317,13 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
 	background-image: url(../img/checkbox-on.svg);
 }
 
+.filter-properties-list .filter-input:disabled + label,
+.filter-properties-list .filter-input:disabled + label::before,
+.filter-bluetooth-list .filter-input:disabled + label,
+.filter-bluetooth-list .filter-input:disabled + label::before {
+	opacity: 0.25;
+} 
+
 .filter-bluetooth-list .filter-input:checked+label::before {
 	background-image: url(../img/radio-on.svg);
 }
@@ -1317,10 +1338,13 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
 	border: 0 solid rgba(0,0,0,0);
 }
 
-
-
 .catalog {
-	max-width: 760px;
+	max-width: 830px;
+}
+
+.catalog-sort-background {
+	background-color: #ebebeb;
+	padding-left: 69px;
 }
 
 .catalog-sorting {
@@ -1330,15 +1354,80 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
 
 .catalog-sorting h4 {
 	font-size: 16px;
-	letter-spacing: 2px;
+	letter-spacing: 3.5px;
 	font-family: 'gilroyextrabold';
 	text-transform: uppercase;
+	margin-right: 50px;
 }
 
 .sort-sites {
-	margin-left: auto;
+	margin-right: auto;
 }
 
+.sort-sites a {
+	font-size: 14px;
+	line-height: 18px;
+	font-family: 'open_sansregular';
+	opacity: 0.3;
+	margin-right: 24px;
+}
+
+.sort-sites a:hover,
+.sort-sites a:focus {
+	opacity: 0.6;
+}
+
+.sort-sites a.active,
+.sort-sites a:active {
+	opacity: 1;
+}
+
+.sort-order {
+	position: relative;
+	font-size: 0px;
+}
+
+.sort-desc::before,
+.sort-asc::before {
+	content: '';
+	position: absolute;
+	width: 11px;
+	height: 10px;
+	top: 5px;
+	right: 33px;
+	background-image: url(../img/icon-up-dir.svg);
+	background-repeat: no-repeat;
+}
+
+.sort-desc::before {
+	right: 2px;
+	background-image: url(../img/icon-down-dir.svg);
+}
+
+.sort-desc,
+.sort-asc  {
+	opacity: 0.2;
+}
+
+.sort-desc:hover,
+.sort-desc:focus,
+.sort-asc:hover,
+.sort-asc:focus  {
+	opacity: 0.4;
+}
+
+.sort-desc.active,
+.sort-asc.active,
+.sort-desc:active,
+.sort-asc:active {
+	opacity: 1;
+}
+
+.catalog-list-background {
+	background-color: #ffffff;
+	padding-left: 69px;
+	padding-top: 70px;
+}
 
 .catalog-list {
 	display: flex;

@@ -441,6 +441,7 @@ button, input, textarea, select {
 	align-items: center;
 	min-height: 580px;
 	/* padding-bottom: 55px; */
+	transform: translate(0px,-40px);
 }
 
 .slider input[type='radio'] {
@@ -451,7 +452,8 @@ button, input, textarea, select {
 .slider-description {
 	flex-direction: column;
 	width: 515px;
-	padding-left: 4px;
+	padding-left: 6px;
+	margin-left: auto;
 }
 
 .slider-description .divider {
@@ -539,19 +541,25 @@ button, input, textarea, select {
 	position: relative;
 }
 
-.slide1 img {
+.slide1 {
 	left: 50px;
 	bottom: 80px;
+	background-image: url(../img/slider-1.png);
+	background-repeat: no-repeat;
 }
 
-.slide2 img {
+.slide2 {
 	top: 0px;
 	left: 0px;
+	background-image: url(../img/slider-2.png);
+	background-repeat: no-repeat;
 }
 
-.slide3 img {
+.slide3 {
 	top: 0px;
 	left: 0px;
+	background-image: url(../img/slider-3.png);
+	background-repeat: no-repeat;
 }
 
 
@@ -1121,8 +1129,6 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
 	display: none;
 }
 
-
-
 .main-catalog {
 	display: flex;
 	position: relative;
@@ -1655,6 +1661,10 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
 .form-message {
 	display: flex;
 	flex-direction: column;
+}
+
+.show-modal {
+	display: block;
 }
 
 .modal-window label {

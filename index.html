@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html lang="ru">
   <head>
 	<meta charset="utf-8">
 	<title>Device</title>
-	<link rel="stylesheet" href="css/styles.css">
-</head>
+  <link rel="stylesheet" href="css/styles.min.css"> 
+  <link rel="stylesheet" href="css/normalize.css">
+  </head>
 <body>
   <header class="main-header container">
     <div class="main-header-background">
@@ -15,7 +17,7 @@
             <button class="search-button" type="submit" name="search-button">Поиск</button>
           </form>
           <ul class="user-block">
-            <li>
+            <li class="user-login">
               <a class="user-option login" href="#">Войти</a>
             </li>
             <li>
@@ -29,7 +31,7 @@
         <div class="header-nav">
           <div class="plus">
             <a class="header-item plus-item" href="#">Каталог товаров</a>
-            <ul class="header-dropdown">
+            <div class="header-dropdown">
               <ul class="dropdown-list">
                 <li class="header-dropdown-item">
                   <a href="#">Виртуальная реальность</a>
@@ -54,7 +56,7 @@
                   <a href="#">Квадрокоптеры</a>
                 </li>
               </ul>
-            </ul>  
+            </div>  
           </div>
           <ul class="header-nav-block">
             <li>
@@ -84,7 +86,6 @@
             <div class="slider-number">01</div>	
           </div>
           <div class="slider-inner">
-            <!-- <img src="img/slider-1.png" width=526 height="486" alt="Изображение палок для селфи"> -->
             <div class="slider-description">
               <h2>Делай селфи,<br>как Бен Стиллер!</h2>
               <p>Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -112,7 +113,6 @@
             <div class="slider-number">02</div>	
           </div>
           <div class="slider-inner">
-            <!-- <img src="img/slider-2.png" width="526" height="486" alt="Изображение фитнес-браслета"> -->
             <div class="slider-description">
               <h2>Худеем<br> правильно!</h2>
               <p>Мотивирующие фитнесc-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
@@ -132,7 +132,6 @@
             <div class="slider-number">03</div>	
           </div>
           <div class="slider-inner">
-            <!-- <img src="img/slider-3.png" width="526" height="486" alt="Изображение квадрокоптера"> -->
             <div class="slider-description">
               <h2>Порхает как бабочка, жалит как пчела!</h2>
               <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -171,7 +170,7 @@
             <h3>Виртуальная реальность</h3>
           </a>
         </li>
-        <li>
+        <li class="category-monopods">
           <a href="catalog.html" class="category-item">
             <div class="category-item-background">
               <img src="img/popular-2.svg" width="86" height="117" alt="Категория 'Виртуальная реальность'">
@@ -242,26 +241,27 @@
     </section> 
 
     <section class="container">
+      <h2 class="visually-hidden">Секция с логотипами-ссылками сайтов-партнёров</h2>
       <div class="partners">
         <ul class="partners-logo">
           <li>
             <a class="partners-logo-item" href="#">
-              <img src="img/logo-1-hover.png" width="260px" height="100px" alt="Логотип сайта Dji">
+              <img src="img/logo-1-hover.png" width="260" height="100" alt="Логотип сайта Dji">
             </a>
           </li>
           <li>
             <a class="partners-logo-item" href="#">
-              <img src="img/logo-3-1-hover.png" width="260px" height="100px" alt="Логотип сайта Sp-gadgets">
+              <img src="img/logo-3-1-hover.png" width="260" height="100" alt="Логотип сайта Sp-gadgets">
             </a>
           </li>
           <li>
             <a class="partners-logo-item" href="#">
-              <img src="img/logo-3-hover.png" width="260px" height="100px" alt="Логотип сайта Gopro">
+              <img src="img/logo-3-hover.png" width="260" height="100" alt="Логотип сайта Gopro">
             </a>
           </li>
           <li>
             <a class="partners-logo-item" href="#">
-              <img src="img/logo-4-hover.png" width="260px" height="100px" alt="Логотип сайта Viva">
+              <img src="img/logo-4-hover.png" width="260" height="100" alt="Логотип сайта Viva">
             </a>
           </li>
         </ul>
@@ -339,7 +339,7 @@
         </li>	
       </ul>
       <a class="academy-icon" href="#">
-        <img src="img/logo-html.svg" alt="Иконка сайта HTML-Academy">
+        <img src="img/logo-html.svg" width="27" height="34" alt="Иконка сайта HTML-Academy">
       </a>
     </div>
   </footer>
@@ -375,6 +375,6 @@
       <div class="modal-map-close">Крестик закрытия модального окна</div>
     </div>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>

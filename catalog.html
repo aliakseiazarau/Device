@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html lang="ru">
   <head>
   <meta charset="utf-8">
   <title>Device</title> 
-  <link rel="stylesheet" href="css/styles.css"> 
+  <link rel="stylesheet" href="css/styles.min.css"> 
+  <link rel="stylesheet" href="css/normalize.css">
   </head>
-</html>
 <body>
   <header class="main-header container">
     <div class="main-header-background">
@@ -31,7 +32,7 @@
         <div class="header-nav">
           <div class="plus">
             <a class="header-item plus-item" href="#">Каталог товаров</a>
-            <ul class="header-dropdown">
+            <div class="header-dropdown">
               <ul class="dropdown-list">
                 <li class="header-dropdown-item">
                   <a href="#">Виртуальная реальность</a>
@@ -56,7 +57,7 @@
                   <a href="#">Квадрокоптеры</a>
                 </li>
               </ul>
-            </ul>  
+            </div>  
           </div>
           <ul class="header-nav-block">
             <li>
@@ -138,9 +139,9 @@
                     </div>	
                   </div>
                 </div>
-                <fieldset>
-                  <div class="filter-properties">
-                    <legend class="filter-properties-title">Цвет</legend>
+                <div class="filter-properties">
+                  <legend class="filter-properties-title">Цвет</legend>
+                  <fieldset>
                     <ul class="filter-properties-list">
                       <li class="filter-option">
                         <input class="filter-input" type="checkbox" name="slider" id="filter-slider" checked="checked">
@@ -163,11 +164,11 @@
                         <label class="icon" for="filter-cart">Розовый</label>
                       </li>
                     </ul>
-                  </div>
-                </fieldset>
-                <fieldset>
-                  <div class="filter-bluetooth-available">
-                    <legend class="filter-bluetooth-title">Bluetooth</legend>
+                  </fieldset>  
+                </div>  
+                <div class="filter-bluetooth-available">
+                  <legend class="filter-bluetooth-title">Bluetooth</legend>
+                  <fieldset>
                     <ul class="filter-bluetooth-list">
                       <li class="filter-option">
                         <input class="filter-input" type="radio" name="filter-sites-radio" value="adaptive" id="filter-adaptive" checked>
@@ -178,8 +179,8 @@
                         <label class="icon" for="filter-fixed">Нет</label> 
                       </li>
                     </ul>
-                  </div>
-                </fieldset>
+                  </fieldset>
+                </div>
                 <button type="submit" class="button filter-button">Показать</button>
               </form>
             </div>
@@ -187,7 +188,7 @@
           <div class="catalog-list-background">
             <ul class="catalog-list">
               <li class="icon catalog-item">
-                <img class="catalog-item-image" src="img/item-1.jpg" width="360" height="380s" alt="Любительская селфи-палка">
+                <img class="catalog-item-image" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                 <div class="catalog-item-action">
                   <a class="button catalog-button" href="#">В корзину</a>
                   <a class="catalog-item-compare" href="#">Добавить к сравнению</a>
@@ -198,7 +199,7 @@
                 </div>  
               </li>
               <li class="icon catalog-item">
-                <img class="catalog-item-image" src="img/item-2.jpg" width="360" height="380s" alt="Профессиональная селфи-палка">
+                <img class="catalog-item-image" src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                 <div class="catalog-item-action">
                   <a class="button catalog-button" href="#">В корзину</a>
                   <a class="catalog-item-compare" href="#">Добавить к сравнению</a>
@@ -209,7 +210,7 @@
                 </div>  
               </li>
               <li class="icon catalog-item">
-                <img class="catalog-item-image" src="img/item-3.jpg" width="360" height="380s" alt="Непотопляемая селфи-палка">
+                <img class="catalog-item-image" src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                 <div class="catalog-item-action">
                   <a class="button catalog-button" href="#">В корзину</a>
                   <a class="catalog-item-compare" href="#">Добавить к сравнению</a>
@@ -220,7 +221,7 @@
                 </div>  
               </li>
               <li class="icon catalog-item new">
-                <img class="catalog-item-image" src="img/item-4.jpg" width="360" height="380s" alt="Селфи-палка 'Следуй за мной'">
+                <img class="catalog-item-image" src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка 'Следуй за мной'">
                 <div class="catalog-item-action">
                   <a class="button catalog-button" href="#">В корзину</a>
                   <a class="catalog-item-compare" href="#">Добавить к сравнению</a>
@@ -246,8 +247,6 @@
         </div>
       </section>
     </div>
-    
-  
   </main> 
 
   <footer class="footer">
@@ -295,9 +294,9 @@
         </li>	
       </ul>
       <a class="academy-icon" href="#">
-        <img src="img/logo-html.svg" alt="Иконка сайта HTML-Academy">
+        <img src="img/logo-html.svg" width="27" height="34" alt="Иконка сайта HTML-Academy">
       </a>
     </div>
   </footer>  
-</body>
+</body>   
 </html>

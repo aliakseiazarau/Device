@@ -36,8 +36,8 @@ html {
 	min-width: 1200px;
 }
 
-.body {
-	font-family: 'gilroyextrabold'; 
+body {
+	font-family: 'open_sanslight', "Arial", sans-serif; 
 	font-size: 16px;
 	line-height: 16px;
 	font-weight: 300;
@@ -162,7 +162,8 @@ select {
 .logo {
   position: absolute;
   font-family: 'gilroyextrabold';
-  font-size: 48px;
+	font-size: 48px;
+	line-height: 48px;
 	bottom: 55px;
 	left: -3px;
 	text-transform: uppercase;
@@ -966,7 +967,7 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
 }
 
 .partners {
-	margin: 95px 0 89px;
+	margin: 95px 0 94px;
 }
 
 .partners-logo {
@@ -1088,7 +1089,7 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
 
 .footer {
 	background: #464646;
-	padding-top: 57px;
+	padding-top: 61px;
 	padding-bottom: 66px;
 }
 
@@ -1114,7 +1115,8 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
 .footer-logo {
 	color: #ffc600;
   font-family: 'gilroyextrabold';
-  font-size: 48px;
+	font-size: 48px;
+	line-height: 48px;
 	text-transform: uppercase;
 	cursor: pointer;
 	margin-right: auto;;
@@ -1275,8 +1277,9 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
 
 .catalog-title {
 	font-size: 47px;
+	line-height: 55px;
 	font-family: 'gilroyextrabold';
-	/* padding-top: 33px; */
+	padding-top: 33px;
 	margin-bottom: 23px;
 }
 
@@ -1367,7 +1370,7 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
 
 .sidebar-filter-form {
 	background-color: #eeeeee;
-	padding: 69px 68px 70px 58px;
+	padding: 69px 70px 70px 57px;
 }
 
 .filter-header {
@@ -1380,7 +1383,7 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
 
 .filter-slider {
 	position: relative;
-	margin-bottom: 14px;
+	margin-bottom: 20px;
 	padding: 16px 0 28px;
 }
 
@@ -1410,13 +1413,13 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
 }
 
 .filter-properties {
-	margin-bottom: 45px;
+	margin-bottom: 48px;
 }
 
 .filter-title-price,
 .filter-properties-title,
 .filter-bluetooth-title {
-	font-size: 18px;
+	font-size: 21px;
 	font-family: 'gilroyextrabold';
 	margin-bottom: 36px;
 }
@@ -1734,7 +1737,7 @@ input:checked:nth-child(3) ~ .advantages-slider-controls .button:nth-child(3) {
 
 .catalog-item {
 	position: relative;
-	margin-bottom: 50px;
+	margin-bottom: 52px;
 }
 
 .new:after {
